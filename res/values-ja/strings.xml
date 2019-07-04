@@ -104,7 +104,6 @@
          6:      hours minutes
          7: days hours minutes
     -->
-    <skip></skip>
     <!-- Timer notification: how long from now until timer goes off.
          (Also used for timer accessibility announcements.) -->
     <string name="timer_notifications_less_min">残り1分未満</string>
@@ -310,7 +309,6 @@
     </string-array>
     <!-- Values for the side-button setting. -->
     <!-- Accessibility labels for Clock activity buttons -->
-    <skip></skip>
     <!-- Accessibility labels for alarm buttons -->
     <string name="label_description">ラベル</string>
     <string name="ringtone_description">着信音</string>

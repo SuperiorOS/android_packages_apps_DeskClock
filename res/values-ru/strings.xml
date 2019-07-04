@@ -110,7 +110,6 @@
          6:      hours minutes
          7: days hours minutes
     -->
-    <skip></skip>
     <!-- Timer notification: how long from now until timer goes off.
          (Also used for timer accessibility announcements.) -->
     <string name="timer_notifications_less_min">Осталось меньше минуты</string>
@@ -337,7 +336,6 @@
     </string-array>
     <!-- Values for the side-button setting. -->
     <!-- Accessibility labels for Clock activity buttons -->
-    <skip></skip>
     <!-- Accessibility labels for alarm buttons -->
     <string name="label_description">Название</string>
     <string name="ringtone_description">Мелодия</string>

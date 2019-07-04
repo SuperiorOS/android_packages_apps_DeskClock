@@ -106,7 +106,6 @@
          6:      hours minutes
          7: days hours minutes
     -->
-    <skip></skip>
     <!-- Timer notification: how long from now until timer goes off.
          (Also used for timer accessibility announcements.) -->
     <string name="timer_notifications_less_min">Bir dakikadan az kaldı</string>
@@ -319,7 +318,6 @@
     </string-array>
     <!-- Values for the side-button setting. -->
     <!-- Accessibility labels for Clock activity buttons -->
-    <skip></skip>
     <!-- Accessibility labels for alarm buttons -->
     <string name="label_description">Etiket</string>
     <string name="ringtone_description">Zil sesi</string>

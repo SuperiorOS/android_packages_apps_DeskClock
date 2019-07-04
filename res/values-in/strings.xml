@@ -104,7 +104,6 @@
          6:      hours minutes
          7: days hours minutes
     -->
-    <skip></skip>
     <!-- Timer notification: how long from now until timer goes off.
          (Also used for timer accessibility announcements.) -->
     <string name="timer_notifications_less_min">Sisa kurang dari satu menit</string>
@@ -137,7 +136,9 @@
         <item>Alarm disetel untuk<xliff:g id="DAYS" example="2 days">%1$s</xliff:g> and <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> dari sekarang.</item>
         <item>Alarm di setel untuk<xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> dari sekarang.</item>
         <item>Alarm disetel untuk <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> dari sekarang.</item>
-        <item>Alarm set for <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>Alarm set for 
+            <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> and 
+            <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
         <item>Alarm disetel untuk <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>, <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g>, and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> dari sekarang.</item>
     </string-array>
     <!-- Alarm confirmation toast: days -->
@@ -310,7 +311,6 @@
     </string-array>
     <!-- Values for the side-button setting. -->
     <!-- Accessibility labels for Clock activity buttons -->
-    <skip></skip>
     <!-- Accessibility labels for alarm buttons -->
     <string name="label_description">Label</string>
     <string name="ringtone_description">Nada dering</string>
@@ -419,68 +419,33 @@
     <!-- Label associated with a notification for a Timer -->
     <string name="timer_notification_label">Penghitung waktu</string>
     <!-- Label associated with a notification for a missed Timer. [CHAR LIMIT=30] -->
-    <string name="missed_timer_notification_label">Missed timer</string>
     <!-- Label associated with a notification for a missed named Timer. [CHAR LIMIT=NONE] -->
-    <string name="missed_named_timer_notification_label">Missed timer: <xliff:g id="name" example="Pick up kids">%s</xliff:g></string>
     <!-- Describes the purpose of the notification button to pause the timer. [CHAR LIMIT=15] -->
-    <string name="timer_pause">Pause</string>
     <!-- Describes the purpose of the notification button to reset all running timers. [CHAR LIMIT=31] -->
-    <string name="timer_reset_all">Reset all timers</string>
-    <string name="hours_minutes_seconds"><xliff:g id="hours" example="2">%d</xliff:g>:<xliff:g id="minutes" example="3">%02d</xliff:g>:<xliff:g id="seconds" example="44">%02d</xliff:g></string>
-    <string name="minutes_seconds"><xliff:g id="minutes" example="3">%d</xliff:g>:<xliff:g id="seconds" example="44">%02d</xliff:g></string>
-    <string name="seconds"><xliff:g id="seconds" example="44">%d</xliff:g></string>
     <!-- Jocular content that user may append when sharing the lap times -->
-    <string-array name="sw_share_strings" translatable="true">
-        <item>You\'re quite the speed demon.</item>
-        <item>Enjoy the fruits of your labor.</item>
-        <item>Androids are known to be fast, but not as fast as you!</item>
-        <item>Phew.</item>
-        <item>L33t times.</item>
-        <item>Such prodigious velocity.</item>
-        <item>Let\'s do the time warp again.</item>
-        <item>Just a jump to the left.</item>
-        <item>You have a palette for haste.</item>
-        <item>Photonic velocity.</item>
-    </string-array>
     <!-- Title with the clock on the main page displaying the user's regular timezone (shows when automatic_home_clock enabled) -->
-    <string name="home_label">Home</string>
     <!-- Label for the Cities activity displayed on-screen when that activity must be represented to the user. -->
-    <string name="cities_activity_title">Cities</string>
     <!-- Settings strings -->
     <!-- Header in the preferences settings for the section pertaining to clocks on the main fragment -->
-    <string name="clock_settings">Clock</string>
     <!-- Header for a Clock Dream Setting referring to choosing analog or digital style -->
-    <string name="clock_style">Style</string>
     <!-- Header for a setting referring to showing seconds on the main clock -->
-    <string name="display_clock_seconds_pref">Display time with seconds</string>
     <!-- Title for preference to change date & time -->
-    <string name="open_date_settings">Change date \u0026 time</string>
     <!-- Entries listed in the ListPreference when invoking the clock style
          preference. -->
-    <string-array name="clock_style_entries">
-        <item>Analog</item>
-        <item>Digital</item>
-    </string-array>
     <!-- Values that are retrieved from the ListPreference. These must match
          the clock_style_entries above. -->
     <!-- Title for an option that will automatically show a clock representing the user's regular timezone on the main fragment whenever the user leaves their regular timezone-->
-    <string name="automatic_home_clock">Automatic home clock</string>
     <!-- Describes the functionality provided by the automatic_home_clock option -->
-    <string name="automatic_home_clock_summary">While traveling in an area where the time is different, add a clock for home</string>
     <!-- Title in the preferences change the time zone for the user's home -->
-    <string name="home_time_zone">Home time zone</string>
     <!-- Title in a list dialog box to pick a time zone for the user's home -->
-    <string name="home_time_zone_title">Home time zone</string>
     <!--
         Accessibility string read when a city checkbox is checked.
         Ex. "Ann Arbor checked"
     -->
-    <string name="city_checked"><xliff:g id="city_name">%s</xliff:g> checked</string>
     <!--
         Accessibility string read when a city checkbox is unchecked.
         Ex. "Ann Arbor unchecked"
     -->
-    <string name="city_unchecked"><xliff:g id="city_name">%s</xliff:g> unchecked</string>
     <!-- Choices for timezones, must be kept in sync with timezone_values. CHAR LIMIT=25] -->
     <string-array name="timezone_labels" tools:ignore="Typos">
         <item>"Marshall Islands"</item>
@@ -621,40 +586,23 @@
          translation. -->
     <string name="description_direction_both">Geser ke kiri untuk menunda atau ke kanan untuk menutup</string>
     <!-- Header in the preferences settings for the section pertaining to timers. -->
-    <string name="timer_settings">Timers</string>
     <!-- Description for timer vibration. -->
-    <string name="timer_vibrate_title">Timer vibrate</string>
     <!-- Notification title when timer is paused. [CHAR LIMIT=25] -->
-    <string name="timer_paused">Timer paused</string>
     <!-- Notification title when multiple timers are paused. [CHAR LIMIT = 30] -->
-    <string name="timers_stopped"><xliff:g id="number" example="7">%d</xliff:g> timers paused</string>
     <!-- Notification text when multiple timers are paused. -->
-    <string name="all_timers_stopped_notif">Tap to see your timers</string>
     <!-- Notification title when at least one timer, of those in use, is counting down. -->
-    <string name="timers_in_use"><xliff:g id="number" example="7">%d</xliff:g> timers</string>
     <!-- Notification text when at least one timer, of those in use, is counting down. -->
-    <string name="next_timer_notif">Next timer: <xliff:g id="time_remaining" example="2 minutes remaining">%s</xliff:g></string>
     <!-- screensaver settings strings -->
     <!-- Title for the screen saver settings activity. -->
-    <string name="screensaver_settings">Screen saver settings</string>
     <!-- Title for check box to pick intensity of display diminuation during screen saver -->
-    <string name="night_mode_title">Night mode</string>
     <!-- Describes intensity of display diminuation during screen saver -->
-    <string name="night_mode_summary">Very dim display (for dark rooms)</string>
     <!-- Description of the down caret in the alarm alert screen to expand the alarm content to edit perspective. [CHAR LIMIT=NONE] -->
-    <string name="expand_alarm">Expand alarm</string>
     <!-- Description of the up caret in the alarm alert screen to collapse the alarm content to summary perspective. [CHAR LIMIT=NONE] -->
-    <string name="collapse_alarm">Collapse alarm</string>
     <!-- Description of the button to undo change to alarm -->
-    <string name="alarm_undo">undo</string>
     <!-- Toast content when an alarm was deleted  -->
-    <string name="alarm_deleted">Alarm deleted</string>
     <!-- slash between date and next alarm in the clock: used for the DigitalAppWidget -->
-    <string name="world_day_of_week_label"> / <xliff:g id="label">%s</xliff:g></string>
     <!-- Number of hours or minutes the world city is ahead of the current city [CHAR LIMIT=NONE] -->
-    <string name="world_time_ahead"><xliff:g id="time" example="6 hours">%1$s</xliff:g> ahead</string>
     <!-- Number of hours or minutes the world city is behind the current city [CHAR LIMIT=NONE] -->
-    <string name="world_time_behind"><xliff:g id="time" example="4 hours">%1$s</xliff:g> behind</string>
     <!-- Number of hours and minutes the world city is ahead of the current city [CHAR LIMIT=NONE] -->
     <string name="world_hours_minutes_ahead"><xliff:g id="hours" example="6 hr">%1$s</xliff:g><xliff:g id="minutes" example="30 min">%2$s</xliff:g>didepan</string>
     <!-- Number of hours and minutes the world city is behind the current city [CHAR LIMIT=NONE] -->
