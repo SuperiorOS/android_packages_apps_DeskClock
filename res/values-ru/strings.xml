@@ -36,7 +36,7 @@
     <!-- Title for timer ringtone picker screen [CHAR LIMIT=30] -->
     <string name="timer_sound">Звук таймера</string>
     <!-- Label for adding a new ringtone sound [CHAR LIMIT=30]-->
-    <string name="add_new_sound">Добавить новую</string>
+    <string name="add_new_sound">Добавить новый</string>
     <!-- Label for removing a ringtone sound [CHAR LIMIT=30] -->
     <string name="remove_sound">Удалить</string>
     <!-- Text that explains what happens to alarms and timers after removing the custom ringtone sound they use [CHAR LIMIT=NONE] -->
@@ -143,7 +143,7 @@
         <item>Будильник зазвонит через <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g>.</item>
         <item>Будильник зазвонит через <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> и <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g>.</item>
         <item>Будильник зазвонит через <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> и <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g>.</item>
-        <item>Будильник зазвонит через <xliff:g id="DAYS">%1$s</xliff:g>, <xliff:g id="HOURS">%2$s</xliff:g> и <xliff:g id="MINUTES">%3$s</xliff:g></item>
+        <item>Будильник зазвонит через <xliff:g id="DAYS">%1$s</xliff:g>, <xliff:g id="HOURS">%2$s</xliff:g> и <xliff:g id="MINUTES">%3$s</xliff:g>.</item>
     </string-array>
     <!-- Alarm confirmation toast: days -->
     <plurals name="days">
@@ -206,7 +206,7 @@
          this character, i.e. "Mon, Tue, Wed" -->
     <string name="day_concat">", "</string>
     <!-- Message indicating the widget is being loaded. -->
-    <string name="loading_widget">Загрузка\u2026</string>
+    <string name="loading_widget">Загрузка…</string>
     <!-- Label for analog clock gadget displayed in the widget picker. [CHAR LIMIT=18] -->
     <string name="analog_gadget">Аналоговые часы</string>
     <!-- Label for digital clock gadget displayed in the widget picker. [CHAR LIMIT=18] -->
@@ -288,7 +288,7 @@
         <item>21 минута</item>
         <item>22 минуты</item>
         <item>23 минуты</item>
-        <item>24 минут</item>
+        <item>24 минуты</item>
         <item>25 минут</item>
         <item>26 минут</item>
         <item>27 минут</item>
@@ -428,7 +428,7 @@
     <!-- Describes the purpose of the button to discard the current dialog values. Will also close the dialog if other time's exist -->
     <string name="timer_cancel">Отменить</string>
     <!-- Accessibility announcement when a timer is canceled. -->
-    <string name="timer_canceled">Таймера отменен</string>
+    <string name="timer_canceled">Таймер отменен</string>
     <!-- Notification content shown when a timer has completed and has no more time remaining -->
     <string name="timer_times_up">Время вышло</string>
     <!--
@@ -632,7 +632,7 @@
     <!-- Describes the service that processes actions originating from stopwatch notifications. -->
     <string name="stopwatch_service_desc">Обрабатывает действия от уведомлений секундомера.</string>
     <!-- Description for the paused stop watch -->
-    <string name="swn_paused">Остановлено</string>
+    <string name="swn_paused">Пауза</string>
     <!-- Text instruction for dismiss alarm on alarm lock screen. The dismiss button will still
          be on the right even on RTL languages so please do not reverse this during
          translation. -->
@@ -778,7 +778,7 @@
     %s represents the time of the alarm (e.g. 15:39)
     [CHAR LIMIT=NONE]
     -->
-    <string name="alarm_cant_be_dismissed_still_more_than_24_hours_away">Будильник на <xliff:g id="alarm_time" example="14:20">%s</xliff:g> нельзя отключить. Он зазвонит более чем через 24 часа.</string>
+    <string name="alarm_cant_be_dismissed_still_more_than_24_hours_away">Будильник на <xliff:g id="alarm_time" example="14:20">%s</xliff:g> нельзя отключить. Он зазвонит более чем через 24 часа</string>
     <!-- String that shows up in the action bar for the Picker Activity
          where a use gets to pick which alarm to dismiss
    [CHAR LIMIT=NONE]
