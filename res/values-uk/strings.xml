@@ -18,20 +18,35 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
     <!-- Label shown on launcher icon -->
     <!-- Label for the this application displayed on-screen when this application must be represented to the user. -->
+    <string name="app_label">Годинник</string>
     <!-- Setting label on Set alarm screen: Label -->
+    <string name="label">Позначка</string>
     <!-- Default label to display for an alarm -->
+    <string name="default_label">Будильник</string>
     <!-- Setting labels on Set alarm screen: Vibration on or off -->
+    <string name="alarm_vibrate">Вібрація</string>
     <!-- Setting labels on Set alarm screen: Repeat -->
+    <string name="alarm_repeat">Повторити</string>
     <!-- Setting labels on Set alarm screen: Delete [CHAR LIMIT=15] -->
+    <string name="delete">Видалити</string>
     <!-- Title of default ringtone played when an alarm triggers [CHAR LIMIT=30] -->
+    <string name="default_alarm_ringtone_title">Звук сигналу за умовчанням</string>
     <!-- Title for alarm ringtone picker screen [CHAR LIMIT=30] -->
+    <string name="alarm_sound">Звук будильника</string>
     <!-- Title for timer ringtone picker screen [CHAR LIMIT=30] -->
+    <string name="timer_sound">Звук таймера</string>
     <!-- Label for adding a new ringtone sound [CHAR LIMIT=30]-->
+    <string name="add_new_sound">Додати новий</string>
     <!-- Label for removing a ringtone sound [CHAR LIMIT=30] -->
+    <string name="remove_sound">Видалити</string>
     <!-- Text that explains what happens to alarms and timers after removing the custom ringtone sound they use [CHAR LIMIT=NONE] -->
+    <string name="confirm_remove_custom_ringtone">Будильники та таймери, які використовують цей звук, натомість відтворюватимуть звук за замовчуванням.</string>
     <!-- Label for "Your sounds" section on ringtone selection screen [CHAR LIMIT=60] -->
+    <string name="your_sounds">Ваші звуки</string>
     <!-- Label for "Device sounds" section on ringtone selection screen [CHAR LIMIT=60] -->
+    <string name="device_sounds">Звуки пристрою</string>
     <!-- Text that explains that the ringtone is inaccessible to the app [CHAR LIMIT=NONE] -->
+    <string name="custom_ringtone_lost_permissions">Немає доступу до цього звуку.</string>
     <!-- Title of default ringtone played when a timer expires. -->
     <!-- Label shown when user is setting up non-repeating alarm for tomorrow [CHAR LIMIT=15] -->
     <!-- Label shown when user is setting up non-repeating alarm for later today [CHAR LIMIT=15] -->
