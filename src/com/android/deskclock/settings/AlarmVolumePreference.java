@@ -64,7 +64,7 @@ public class AlarmVolumePreference extends Preference {
         mSeekbar = (SeekBar) holder.findViewById(R.id.seekbar);
         mSeekbar.setMax(audioManager.getStreamMaxVolume(STREAM_ALARM));
         mSeekbar.setProgress(audioManager.getStreamVolume(STREAM_ALARM));
-        mAlarmIcon = (ImageView) holder.findViewById(R.id.icon);
+        mAlarmIcon = (ImageView) holder.findViewById(android.R.id.icon);
 
         onSeekbarChanged();
 
