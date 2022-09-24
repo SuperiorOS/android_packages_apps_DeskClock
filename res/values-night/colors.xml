@@ -22,5 +22,5 @@
     <color name="analog_appwidget_hour_hand_color">@*android:color/system_accent1_100</color>
     <color name="analog_appwidget_minute_hand_color">@*android:color/system_accent1_600</color>
     <color name="analog_appwidget_second_hand_color">@*android:color/system_accent1_400</color>
-
+    <color name="digital_appwidget_text_color">@*android:color/system_accent1_100</color>
 </resources>

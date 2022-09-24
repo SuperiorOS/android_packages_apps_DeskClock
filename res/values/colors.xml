@@ -77,5 +77,6 @@
     <color name="analog_appwidget_hour_hand_color">@*android:color/system_accent1_500</color>
     <color name="analog_appwidget_minute_hand_color">@*android:color/system_accent1_700</color>
     <color name="analog_appwidget_second_hand_color">@*android:color/system_accent1_600</color>
+    <color name="digital_appwidget_text_color">@*android:color/system_accent1_600</color>
 
 </resources>
