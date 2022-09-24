@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2008 The Android Open Source Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-  
-          http://www.apache.org/licenses/LICENSE-2.0
-  
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
-
-<AnalogClock xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/analog_appwidget"
-    android:dial="@drawable/appwidget_clock_dial"
-    android:hand_hour="@drawable/appwidget_clock_hour"
-    android:hand_minute="@drawable/appwidget_clock_minute"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+<FrameLayout android:id="@+id/widget_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:clipToOutline="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@android:id/background" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:clipToOutline="true" />
+    <TextClock android:textColor="@android:color/transparent" android:id="@+id/a11y_clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:backgroundTint="@android:color/transparent" />
+    <AnalogClock android:theme="@style/Theme.DeskClock.AnalogWidget" android:id="@+id/analog_appwidget" android:layout_width="fill_parent" android:layout_height="fill_parent" android:dial="@drawable/clock_analog_dial" android:hand_hour="@drawable/clock_analog_hour" android:hand_minute="@drawable/clock_analog_minute" android:importantForAccessibility="no" android:hand_second="@drawable/clock_analog_second" />
+    <AnalogClock android:theme="@style/Theme.DeskClock.AnalogWidget" android:id="@+id/date_clock" android:layout_width="fill_parent" android:layout_height="fill_parent" android:dial="@drawable/empty_dial_drawable" android:hand_hour="@drawable/empty_drawable" android:hand_minute="@drawable/empty_drawable" android:importantForAccessibility="no" android:dialTint="@android:color/transparent" android:hand_hourTint="@android:color/transparent" android:hand_minuteTint="@android:color/transparent" android:hand_secondTint="@color/accent_100" />
+</FrameLayout>

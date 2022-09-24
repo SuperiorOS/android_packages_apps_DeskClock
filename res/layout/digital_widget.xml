@@ -17,40 +17,48 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/digital_widget"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="top|center_horizontal"
+    android:gravity="center" 
+    android:layout_gravity="center" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/digital_stadium_background"
+    android:backgroundTint="@color/system_bg" 
+    android:clipToOutline="true"
     android:orientation="vertical">
+
+        <TextClock
+            android:id="@+id/date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top" 
+            android:layout_marginTop="24dp"
+            android:ellipsize="none"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:textSize="13sp"
+            android:textColor="@color/analog_appwidget_minute_hand_color" />
 
     <TextClock
         android:id="@+id/clock"
-        style="@style/widget_big_thin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|top"
+        android:layout_gravity="center" 
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:ellipsize="none"
         android:format12Hour="@string/lock_screen_12_hour_format"
         android:format24Hour="@string/lock_screen_24_hour_format"
         android:includeFontPadding="false"
         android:singleLine="true"
-        android:textColor="@color/white" />
+        android:textSize="24sp"
+        android:textColor="@color/analog_appwidget_minute_hand_color" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|top">
-
-        <TextClock
-            android:id="@+id/date"
-            style="@style/widget_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:ellipsize="none"
-            android:includeFontPadding="false"
-            android:singleLine="true"
-            android:textAllCaps="true"
-            android:textColor="@color/white" />
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center|top">
 
         <ImageView
             android:id="@+id/nextAlarmIcon"
@@ -62,7 +70,6 @@
 
         <TextView
             android:id="@+id/nextAlarm"
-            style="@style/widget_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -70,7 +77,8 @@
             android:includeFontPadding="false"
             android:singleLine="true"
             android:textAllCaps="true"
-            android:textColor="@color/white" />
+            android:textSize="13sp"
+            android:textColor="@color/analog_appwidget_minute_hand_color" />
 
     </LinearLayout>
 
@@ -78,8 +86,9 @@
         android:id="@+id/world_city_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:layout_gravity="center_horizontal|top"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="9dp"
         android:divider="@null" />
 
 </LinearLayout>

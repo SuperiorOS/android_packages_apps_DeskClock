@@ -271,28 +271,7 @@ public class DigitalAppWidgetProvider extends AppWidgetProvider {
         rv.setTextViewTextSize(R.id.date, COMPLEX_UNIT_PX, sizes.mFontSizePx);
         rv.setTextViewTextSize(R.id.nextAlarm, COMPLEX_UNIT_PX, sizes.mFontSizePx);
         rv.setTextViewTextSize(R.id.clock, COMPLEX_UNIT_PX, sizes.mClockFontSizePx);
-
-        final int smallestWorldCityListSizePx =
-                resources.getDimensionPixelSize(R.dimen.widget_min_world_city_list_size);
-        if (sizes.getListHeight() <= smallestWorldCityListSizePx) {
-            // Insufficient space; hide the world city list.
-            rv.setViewVisibility(R.id.world_city_list, GONE);
-        } else {
-            // Set an adapter on the world city list. That adapter connects to a Service via intent.
-            final Intent intent = new Intent(context, DigitalAppWidgetCityService.class);
-            intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, widgetId);
-            intent.setData(Uri.parse(intent.toUri(Intent.URI_INTENT_SCHEME)));
-            rv.setRemoteAdapter(R.id.world_city_list, intent);
-            rv.setViewVisibility(R.id.world_city_list, VISIBLE);
-
-            // Tapping on the widget opens the city selection activity (if not on the lock screen).
-            if (Utils.isWidgetClickable(wm, widgetId)) {
-                final Intent selectCity = new Intent(context, CitySelectionActivity.class);
-                final PendingIntent pi = PendingIntent.getActivity(context, 0, selectCity,
-                        FLAG_IMMUTABLE);
-                rv.setPendingIntentTemplate(R.id.world_city_list, pi);
-            }
-        }
+	rv.setViewVisibility(R.id.world_city_list, GONE);
 
         return rv;
     }

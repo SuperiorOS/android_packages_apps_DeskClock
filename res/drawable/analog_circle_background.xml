@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/analog_widget_dial_size" android:width="@dimen/analog_widget_dial_size" />
+    <solid android:color="@color/analog_appwidget_dial_number_color" />
+    <corners android:radius="147.0dip" />
+</shape>

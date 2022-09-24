@@ -24,10 +24,6 @@
 
     <style name="widget_medium_thin">
         <item name="android:fontFamily">sans-serif-thin</item>
-        <item name="android:shadowRadius">@dimen/widget_shadow_radius</item>
-        <item name="android:shadowColor">@color/widget_shadow_color</item>
-        <item name="android:shadowDx">@dimen/widget_shadow_dx</item>
-        <item name="android:shadowDy">@dimen/widget_shadow_dy</item>
     </style>
 
     <style name="label">
@@ -37,10 +33,6 @@
     <style name="widget_label" parent="label">
         <item name="android:textAllCaps">true</item>
         <item name="android:letterSpacing">0.15</item>
-        <item name="android:shadowRadius">@dimen/widget_shadow_radius</item>
-        <item name="android:shadowColor">@color/widget_shadow_color</item>
-        <item name="android:shadowDx">@dimen/widget_shadow_dx</item>
-        <item name="android:shadowDy">@dimen/widget_shadow_dy</item>
     </style>
 
     <style name="display_time">
@@ -52,7 +44,7 @@
 
     <style name="world_clock_time">
         <item name="android:textSize">48sp</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@color/analog_appwidget_minute_hand_color</item>
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
@@ -73,10 +65,6 @@
     </style>
 
     <style name="widget_big_thin" parent="big_thin">
-        <item name="android:shadowRadius">@dimen/widget_shadow_radius</item>
-        <item name="android:shadowColor">@color/widget_shadow_color</item>
-        <item name="android:shadowDx">@dimen/widget_shadow_dx</item>
-        <item name="android:shadowDy">@dimen/widget_shadow_dy</item>
         <item name="android:fontFamily">sans-serif-thin</item>
     </style>
 
@@ -209,4 +197,6 @@
         <item name="layout_constraintStart_toStartOf">parent</item>
         <item name="layout_constraintTop_toBottomOf">@id/timer_setup_time</item>
     </style>
+    
+    <style name="Theme.DeskClock.AnalogWidget" parent="@android:style/Theme.DeviceDefault.DayNight" />
 </resources>

@@ -21,7 +21,8 @@
 
     <TextClock
         android:id="@+id/clock"
-        style="@style/widget_big_thin"
+        android:textSize="13sp"
+        android:textColor="@color/analog_appwidget_minute_hand_color"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|top"
@@ -29,8 +30,7 @@
         android:ellipsize="none"
         android:format12Hour="@string/lock_screen_12_hour_format"
         android:format24Hour="@string/lock_screen_24_hour_format"
-        android:singleLine="true"
-        android:textColor="@color/white" />
+        android:singleLine="true" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -39,7 +39,6 @@
 
         <TextClock
             android:id="@+id/date"
-            style="@style/widget_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -47,12 +46,12 @@
             android:ellipsize="none"
             android:singleLine="true"
             android:textAllCaps="true"
-            android:textColor="@color/white" />
+            android:textSize="13sp"
+            android:textColor="@color/analog_appwidget_minute_hand_color" />
 
         <!-- This view is drawn to a Bitmap and sent to the widget as an icon. -->
         <TextView
             android:id="@+id/nextAlarmIcon"
-            style="@style/widget_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -60,11 +59,11 @@
             android:ellipsize="none"
             android:singleLine="true"
             android:text="@string/clock_emoji"
-            android:textColor="@color/white" />
+            android:textSize="13sp"
+            android:textColor="@color/analog_appwidget_minute_hand_color" />
 
         <TextView
             android:id="@+id/nextAlarm"
-            style="@style/widget_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -72,7 +71,8 @@
             android:ellipsize="none"
             android:singleLine="true"
             android:textAllCaps="true"
-            android:textColor="@color/white" />
+            android:textSize="13sp"
+            android:textColor="@color/analog_appwidget_minute_hand_color" />
 
     </LinearLayout>
 

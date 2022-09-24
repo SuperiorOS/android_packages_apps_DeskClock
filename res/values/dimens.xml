@@ -144,4 +144,6 @@
     <dimen name="settings_padding">4dp</dimen>
 
     <dimen name="analog_clock_width_percent">0.5</dimen>
+    <dimen name="analog_widget_dial_size">380.0dip</dimen>
+    <item type="dimen" name="analog_widget_font_ratio">0.1</item>
 </resources>
