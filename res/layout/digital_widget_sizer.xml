@@ -1,79 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016 The Android Open Source Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
-
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <TextClock
-        android:id="@+id/clock"
-        android:textSize="13sp"
         android:textColor="@color/analog_appwidget_minute_hand_color"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|top"
-        android:includeFontPadding="false"
         android:ellipsize="none"
-        android:format12Hour="@string/lock_screen_12_hour_format"
-        android:format24Hour="@string/lock_screen_24_hour_format"
-        android:singleLine="true" />
-
-    <LinearLayout
+        android:layout_gravity="center|top"
+        android:id="@id/clock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|top">
-
+        android:singleLine="true"
+        android:includeFontPadding="false"
+        android:format12Hour="@string/lock_screen_12_hour_format"
+        android:format24Hour="@string/lock_screen_24_hour_format" />
+    <LinearLayout
+        android:layout_gravity="center|top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
         <TextClock
-            android:id="@+id/date"
+            android:textColor="@color/analog_appwidget_minute_hand_color"
+            android:ellipsize="none"
+            android:layout_gravity="center"
+            android:id="@id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:includeFontPadding="false"
-            android:ellipsize="none"
             android:singleLine="true"
-            android:textAllCaps="true"
-            android:textSize="13sp"
-            android:textColor="@color/analog_appwidget_minute_hand_color" />
-
-        <!-- This view is drawn to a Bitmap and sent to the widget as an icon. -->
+            android:includeFontPadding="false"
+            android:textAllCaps="true" />
         <TextView
-            android:id="@+id/nextAlarmIcon"
+            android:textColor="@color/analog_appwidget_minute_hand_color"
+            android:ellipsize="none"
+            android:layout_gravity="center"
+            android:id="@id/nextAlarmIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:includeFontPadding="false"
-            android:ellipsize="none"
-            android:singleLine="true"
             android:text="@string/clock_emoji"
-            android:textSize="13sp"
-            android:textColor="@color/analog_appwidget_minute_hand_color" />
-
+            android:singleLine="true"
+            android:includeFontPadding="false" />
         <TextView
-            android:id="@+id/nextAlarm"
+            android:textColor="@color/analog_appwidget_minute_hand_color"
+            android:ellipsize="none"
+            android:layout_gravity="center"
+            android:id="@id/nextAlarm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:includeFontPadding="false"
-            android:ellipsize="none"
             android:singleLine="true"
-            android:textAllCaps="true"
-            android:textSize="13sp"
-            android:textColor="@color/analog_appwidget_minute_hand_color" />
-
+            android:includeFontPadding="false"
+            android:textAllCaps="true" />
     </LinearLayout>
-
 </LinearLayout>

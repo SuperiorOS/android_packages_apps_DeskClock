@@ -65,7 +65,7 @@
 
     <color name="system_neutral1_50">@*android:color/system_neutral1_50</color>
 
-    <color name="system_bg">@*android:color/system_neutral1_50</color>
+    <color name="system_bg">@*android:color/system_accent2_50</color>
 
     <color name="accent_100">@*android:color/system_accent1_100</color>
     <color name="accent_200">@*android:color/system_accent1_200</color>
@@ -74,9 +74,9 @@
 
     <color name="analog_appwidget_day_text_color">@*android:color/background_floating_material_dark</color>
     <color name="analog_appwidget_dial_number_color">@*android:color/background_device_default_dark</color>
-    <color name="analog_appwidget_hour_hand_color">@*android:color/system_accent1_500</color>
-    <color name="analog_appwidget_minute_hand_color">@*android:color/system_accent1_700</color>
-    <color name="analog_appwidget_second_hand_color">@*android:color/system_accent1_600</color>
+    <color name="analog_appwidget_hour_hand_color">@*android:color/system_accent1_600</color>
+    <color name="analog_appwidget_minute_hand_color">@*android:color/system_accent2_800</color>
+    <color name="analog_appwidget_second_hand_color">@*android:color/system_accent3_600</color>
     <color name="digital_appwidget_text_color">@*android:color/system_accent1_600</color>
 
 </resources>
