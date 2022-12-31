@@ -44,7 +44,7 @@
         android:fullBackupContent="@xml/backup_scheme"
         android:fullBackupOnly="true"
         android:appCategory="productivity"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_alarmclock"
         android:label="@string/app_label"
         android:requiredForAllUsers="true"
         android:supportsRtl="true"
